@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
+  <display-name>GestionReservationSalle</display-name>
+  <welcome-file-list>
+    <welcome-file>GestionSalle.jsp</welcome-file> 
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>Scontroller</servlet-name>
+    <servlet-class>controller.Scontroller</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Scontroller</servlet-name>
+    <url-pattern>/Scontroller</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>ClientController</servlet-name>
+    <servlet-class>controller.ClientController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ClientController</servlet-name>
+    <url-pattern>/ClientController</url-pattern>
+  </servlet-mapping>
+    <servlet>
+    <servlet-name>CreneauController</servlet-name>
+    <servlet-class>controller.CreneauController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CreneauController</servlet-name>
+    <url-pattern>/CreneauController</url-pattern>
+  </servlet-mapping>
+  
+  
+</web-app>
